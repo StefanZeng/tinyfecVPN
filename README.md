@@ -196,4 +196,4 @@ Note: the performance is mainly limited by the RS code lib.
 
 As a VPN software may contradict with local regulations, I had to introduce an intended restriction in the pre-released binaries: you can only use tinyFecVPN to access your own server.
 
-You can easily get rid of this restriction by compiling the source code by yourself(there is a macro for it). This restriction exits only at server side, only the server side binary needs to be re-compiled.
+You can easily get rid of this restriction by compiling the source code by yourself(just take a look at makefile). This restriction exits only at server side, only the server side binary needs to be re-compiled.
