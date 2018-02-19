@@ -21,6 +21,12 @@ TAR=${NAME}_binaries.tar.gz `echo ${TARGETS}|sed -r 's/([^ ]+)/tinyvpn_\1/g'` ve
 all:git_version
 	rm -f ${NAME}
 	${cc_local}   -o ${NAME}      ${INCLUDE}  ${SOURCES} ${FLAGS} -lrt -ggdb -static -O3
+
+nolimit_all:
+	make OPT=-DNOLIMIT
+nolimit_release:
+	make release OPT=-DNOLIMIT
+
 debug: git_version
 	rm -f ${NAME}
 	${cc_local}   -o ${NAME}          -I. ${SOURCES} ${FLAGS} -lrt -Wformat-nonliteral -D MY_DEBUG 
