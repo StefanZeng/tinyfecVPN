@@ -52,8 +52,8 @@ static void print_help()
 //	printf("    --disable-xor         <number>        disable xor\n");
 
 	printf("developer options:\n");
-	printf("    --tun-mtu             <number >       mtu of the tun interface,most time you shouldnt change this\n");
-	printf("    --disable-mssfix      <number >       disable mssfix for tcp connection\n");
+	printf("    --tun-mtu             <number>        mtu of the tun interface,most time you shouldnt change this\n");
+	printf("    --mssfix              <number>        do mssfix for tcp connection, use 0 to disable. default value: 0 \n");
 	printf("    -i,--interval         imin:imax       similiar to -i above, but scatter randomly between imin and imax\n");
 	printf("    --fifo                <string>        use a fifo(named pipe) for sending commands to the running program, so that you\n");
 	printf("                                          can change fec encode parameters dynamically, check readme.md in repository for\n");
